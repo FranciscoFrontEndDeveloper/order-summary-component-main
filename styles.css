@@ -14,4 +14,32 @@
   width: 300px;
   height: 80%;
   border: 1px solid black;
+  display: grid;
+  border-radius: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+}
+.Main_section div:nth-child(1) img {
+  max-width: 100%;
+  min-height: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.Main_section div:nth-child(2), .Main_section div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.Main_section div:nth-child(4) {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.Main_section div:nth-child(5), .Main_section div:nth-child(6) {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */
