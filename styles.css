@@ -10,17 +10,20 @@
   justify-content: center;
   align-items: center;
   font-family: "Red Hat Display", sans-serif;
+  gap: 30px;
 }
 
 .Main_section {
   width: 300px;
-  height: 80%;
-  border: 1px solid black;
+  height: auto;
   display: grid;
   border-radius: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto auto;
   background: #f5f7ff;
+  gap: 30px;
+  -webkit-box-shadow: 5px 5px 6px -6px #000000;
+  box-shadow: 5px 5px 6px -6px #000000;
 }
 .Main_section div:nth-child(1) img {
   max-width: 100%;
@@ -37,11 +40,12 @@
 .Main_section div:nth-child(2) p, .Main_section div:nth-child(3) p {
   font-size: 16px;
   color: #7280a7;
+  width: 90%;
 }
 .Main_section div:nth-child(4) {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(2, auto);
   justify-content: space-evenly;
   align-items: center;
 }
@@ -50,8 +54,42 @@
   grid-template-rows: repeat(2, auto);
   grid-template-columns: 1fr;
 }
+.Main_section div:nth-child(4) div span {
+  color: #7280a7;
+}
+.Main_section div:nth-child(4) a {
+  color: #3829e0;
+}
+.Main_section div:nth-child(4) a:hover {
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
 .Main_section div:nth-child(5), .Main_section div:nth-child(6) {
   display: grid;
   justify-content: center;
   align-items: center;
+}
+.Main_section div:nth-child(5) input, .Main_section div:nth-child(6) input {
+  border: none;
+  width: 270px;
+  padding: 12px 0;
+  background: #3829e0;
+  color: #e0e8ff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 9px 7px -6px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 9px 7px -6px rgba(0, 0, 0, 0.55);
+}
+.Main_section div:nth-child(5) input:hover, .Main_section div:nth-child(6) input:hover {
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+.Main_section div:nth-child(5) a, .Main_section div:nth-child(6) a {
+  text-decoration: none;
+  color: #7280a7;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+.Main_section div:nth-child(5) a:hover, .Main_section div:nth-child(6) a:hover {
+  color: #1f2f56;
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=styles.css.map */
