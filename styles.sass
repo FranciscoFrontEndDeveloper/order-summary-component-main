@@ -13,7 +13,7 @@ $RedHatDisplay: 'Red Hat Display', sans-serif
  background-position: center
  background-size: cover
  display: grid
- justify-content: center
+ justify-items: center
  align-items: center
  font-family: $RedHatDisplay
  gap: 30px
@@ -84,3 +84,19 @@ $RedHatDisplay: 'Red Hat Display', sans-serif
    &:hover
     color: $DarkBlue
     transition: all .3s ease
+
+.containerFooter
+ display: grid
+ justify-items: center
+ width: 100%
+ font-size: 12px
+ h3
+  color: #000
+  text-align: center
+ a
+  color: #FF3F00
+  text-transform: capitalize
+  text-decoration: none
+ &:hover
+  text-decoration: underline
+  color: #FF3F00

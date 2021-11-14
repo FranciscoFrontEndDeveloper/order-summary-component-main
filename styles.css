@@ -7,7 +7,7 @@
   background-position: center;
   background-size: cover;
   display: grid;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
   font-family: "Red Hat Display", sans-serif;
   gap: 30px;
@@ -92,4 +92,24 @@
 .Main_section div:nth-child(5) a:hover, .Main_section div:nth-child(6) a:hover {
   color: #1f2f56;
   transition: all 0.3s ease;
+}
+
+.containerFooter {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  font-size: 12px;
+}
+.containerFooter h3 {
+  color: #000;
+  text-align: center;
+}
+.containerFooter a {
+  color: #FF3F00;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.containerFooter:hover {
+  text-decoration: underline;
+  color: #FF3F00;
 }/*# sourceMappingURL=styles.css.map */
