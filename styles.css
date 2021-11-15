@@ -64,7 +64,7 @@ div:nth-child(4) span {
 div:nth-child(4) a {
   color: #3829e0;
 }
-div:nth-child(4):hover {
+div:nth-child(4) a:hover {
   opacity: 0.6;
   transition: all 0.3s ease;
 }
