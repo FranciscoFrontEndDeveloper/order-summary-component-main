@@ -58,6 +58,7 @@ div:nth-child(4)
     color: $DesaturatedBlue
   a
     color: $BrightBlue
+    text-decoration: underline
     &:hover
       opacity: .6
       transition: all .3s ease
@@ -74,17 +75,17 @@ div:nth-child(5),div:nth-child(6)
     border-radius: 10px
     -webkit-box-shadow: 0px 9px 7px -6px rgba(0,0,0,0.55)
     box-shadow: 0px 9px 7px -6px rgba(0,0,0,0.55)
-  &:hover
-    opacity: 0.6
-    transition: all .3s ease
+    &:hover
+      opacity: 0.6
+      transition: all .3s ease
   a
     text-decoration: none
     color: $DesaturatedBlue
     font-weight: 900
     padding-bottom: 20px
-  &:hover
-    color: $DarkBlue
-    transition: all .3s ease
+    &:hover
+      color: $DarkBlue
+      transition: all .3s ease
 .containerFooter
   display: grid
   justify-items: center
@@ -98,8 +99,8 @@ a
   text-transform: capitalize
   text-decoration: none
   &:hover
-  text-decoration: underline
-  color: #FF3F00
+    text-decoration: underline
+    color: #FF3F00
 @media screen and ( min-width: 1024px) and (max-width: 1920px)
   .Main
     background-image: url(images/pattern-background-desktop.svg)

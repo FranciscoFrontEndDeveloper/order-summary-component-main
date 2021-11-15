@@ -63,6 +63,7 @@ div:nth-child(4) span {
 }
 div:nth-child(4) a {
   color: #3829e0;
+  text-decoration: underline;
 }
 div:nth-child(4) a:hover {
   opacity: 0.6;
@@ -84,7 +85,7 @@ div:nth-child(5) input, div:nth-child(6) input {
   -webkit-box-shadow: 0px 9px 7px -6px rgba(0, 0, 0, 0.55);
   box-shadow: 0px 9px 7px -6px rgba(0, 0, 0, 0.55);
 }
-div:nth-child(5):hover, div:nth-child(6):hover {
+div:nth-child(5) input:hover, div:nth-child(6) input:hover {
   opacity: 0.6;
   transition: all 0.3s ease;
 }
@@ -94,7 +95,7 @@ div:nth-child(5) a, div:nth-child(6) a {
   font-weight: 900;
   padding-bottom: 20px;
 }
-div:nth-child(5):hover, div:nth-child(6):hover {
+div:nth-child(5) a:hover, div:nth-child(6) a:hover {
   color: #1f2f56;
   transition: all 0.3s ease;
 }
@@ -115,9 +116,12 @@ a {
   color: #FF3F00;
   text-transform: capitalize;
   text-decoration: none;
+}
+a:hover {
   text-decoration: underline;
   color: #FF3F00;
 }
+
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
   .Main {
     background-image: url(images/pattern-background-desktop.svg);
