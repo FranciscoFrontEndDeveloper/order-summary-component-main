@@ -6,97 +6,100 @@ $DesaturatedBlue: hsl(224, 23%, 55%)
 $DarkBlue: hsl(223, 47%, 23%)
 $RedHatDisplay: 'Red Hat Display', sans-serif
 .Main
- width: 100%
- height: 100vh
- background-image: url(images/pattern-background-mobile.svg)
- background-repeat: no-repeat
- background-position: center
- background-size: cover
- display: grid
- justify-items: center
- align-items: center
- font-family: $RedHatDisplay
- gap: 30px
+  width: 100%
+  height: 100vh
+  background-image: url(images/pattern-background-mobile.svg)
+  background-repeat: no-repeat
+  background-position: top
+  background-size: 100%
+  background-color: $VeryPaleBlue
+  display: grid
+  justify-items: center
+  align-items: center
+  font-family: $RedHatDisplay
+  gap: 30px
 .Main_section
- width: 300px
- height: auto
- display: grid
- border-radius: 10px
- grid-template-columns: 1fr
- grid-template-rows: auto auto auto auto auto auto
- background: $VeryPaleBlue
- gap: 30px
- -webkit-box-shadow: 5px 5px 6px -6px #000000
- box-shadow: 5px 5px 6px -6px #000000
- div:nth-child(1)
+  width: 300px
+  height: auto
+  display: grid
+  border-radius: 10px
+  grid-template-columns: 1fr
+  grid-template-rows: auto auto auto auto auto auto
+  background: $VeryPaleBlue
+  gap: 30px
+  -webkit-box-shadow: 5px 5px 6px -6px #000000
+  box-shadow: 5px 5px 6px -6px #000000
+div:nth-child(1)
   img
-   max-width: 100%
-   min-height: 100%
-   border-top-left-radius: 8px
-   border-top-right-radius: 8px
- div:nth-child(2), div:nth-child(3)
+    max-width: 100%
+    min-height: 100%
+    border-top-left-radius: 8px
+    border-top-right-radius: 8px
+div:nth-child(2), div:nth-child(3)
   display: flex
   align-items: center
   justify-content: center
   text-align: center
   p
-   font-size: 16px
-   color: $DesaturatedBlue
-   width: 90%
- div:nth-child(4)
+    font-size: 16px
+    color: $DesaturatedBlue
+    width: 90%
+div:nth-child(4)
   display: grid
   grid-template-columns: repeat(3,auto )
   grid-template-rows: repeat(2,auto)
   justify-content: space-evenly
   align-items: center
   div
-   display: grid
-   grid-template-rows: repeat(2,auto)
-   grid-template-columns: 1fr
-   span
+    display: grid
+    grid-template-rows: repeat(2,auto)
+    grid-template-columns: 1fr
+  span
     color: $DesaturatedBlue
   a
-   color: $BrightBlue
-   &:hover
+    color: $BrightBlue
+  &:hover
     opacity: .6
     transition: all .3s ease
- div:nth-child(5),div:nth-child(6)
+div:nth-child(5),div:nth-child(6)
   display: grid
   justify-content: center
   align-items: center
   input
-   border: none
-   width: 270px
-   padding: 12px 0
-   background: $BrightBlue
-   color: $PaleBlue
-   border-radius: 10px
-   -webkit-box-shadow: 0px 9px 7px -6px rgba(0,0,0,0.55)
-   box-shadow: 0px 9px 7px -6px rgba(0,0,0,0.55)
-   &:hover
+    border: none
+    width: 270px
+    padding: 12px 0
+    background: $BrightBlue
+    color: $PaleBlue
+    border-radius: 10px
+    -webkit-box-shadow: 0px 9px 7px -6px rgba(0,0,0,0.55)
+    box-shadow: 0px 9px 7px -6px rgba(0,0,0,0.55)
+  &:hover
     opacity: 0.6
     transition: all .3s ease
   a
-   text-decoration: none
-   color: $DesaturatedBlue
-   font-weight: 900
-   padding-bottom: 20px
-   &:hover
+    text-decoration: none
+    color: $DesaturatedBlue
+    font-weight: 900
+    padding-bottom: 20px
+  &:hover
     color: $DarkBlue
     transition: all .3s ease
-
 .containerFooter
- display: grid
- justify-items: center
- width: 100%
- font-size: 12px
- h3
+  display: grid
+  justify-items: center
+  width: 100%
+  font-size: 12px
+h3
   color: #000
   text-align: center
- a
+a
   color: #FF3F00
   text-transform: capitalize
   text-decoration: none
- &:hover
+  &:hover
   text-decoration: underline
   color: #FF3F00
+@media screen and ( min-width: 1024px) and (max-width: 1920px)
+  .Main
+    background-image: url(images/pattern-background-desktop.svg)
